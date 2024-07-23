@@ -1,0 +1,6 @@
+{"id":"stgra","state":"STARTED","type":"APPLICATION_LOG","host":"12345","timestamp":1491377495210}
+{"id":"stgrb","state":"STARTED","timestamp":1491377495213}
+{"id":"stgrc","state":"FINISHED","timestamp":1491377495218}
+{"id":"stgra","state":"FINISHED","type":"APPLICATION_LOG","host":"12345","timestamp":1491377495215}
+{"id":"stgrc","state":"STARTED","timestamp":1491377495210}
+{"id":"stgrb","state":"FINISHED","timestamp":1491377495216}
