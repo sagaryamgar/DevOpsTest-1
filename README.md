@@ -1,2 +1,2 @@
 # DevOpsTest-1
- Assessment Application created for UBS account DevOps
+ Assessment Application created for account DevOps
