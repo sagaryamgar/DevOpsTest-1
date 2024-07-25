@@ -1,11 +1,15 @@
 package com.test.devops.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class LogEntity {
-	
+	@JsonProperty(required = true)
 	String id;
 	String host;
 	String type;
+	@JsonProperty(required = true)
 	String state;
+	@JsonProperty(required = true)
 	String timestamp;
 	
 	public LogEntity() {
