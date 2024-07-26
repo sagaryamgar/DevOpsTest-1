@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -26,10 +27,8 @@ public class ReadFileImpl implements ReadFile {
 	@Override
 	public String readFile(String filePath) {
 		try {
-			List<String> lines = Files.readAllLines(Paths.get(filePath));
-			for (String line : lines) {
-				parseToJson(line);
-			}
+			Stream<String> lines = Files.lines(Paths.get(filePath));
+			lines.forEach(line -> parseToJson(line));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
